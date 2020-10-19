@@ -37,6 +37,12 @@
             <artifactId>maven-surefire-plugin</artifactId>
             <version>3.0.0-M5</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.codeborne/selenide -->
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>5.15.1</version>
+        </dependency>
     </dependencies>
 
     <build>
