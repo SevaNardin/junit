@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * @author Seva Nardin
  */
 
-public class GoogleTestIT {
+public class GoogleTest {
 
     @Test
     @DisplayName( "Open google (UI Test)" )
