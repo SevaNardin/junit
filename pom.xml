@@ -53,6 +53,16 @@
 
     <build>
         <plugins>
+            <!-- Плагин compiler комплирует исходный java код приложения и тестов в байткод -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
             <!-- Отвечает за выполнение модульных тестов - классов со словом Test-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
