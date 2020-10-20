@@ -14,6 +14,7 @@
         <junit-jupiter.version>5.5.2</junit-jupiter.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jenkins-test-harness.version>2.34</jenkins-test-harness.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
