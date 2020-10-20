@@ -1,4 +1,3 @@
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -16,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class GoogleTestIT {
 
     @Test
-    @Disabled("В CI проблема запуска Selenide надо копать")
+//    @Disabled("В CI проблема запуска Selenide надо копать")
     @DisplayName( "Open google (UI Test)" )
     void openGoogle() {
         // открытие страницы
