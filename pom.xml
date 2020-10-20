@@ -80,15 +80,15 @@
                     <!-- Исключить тесты -->
                     <!--                        <excludedGroups></excludedGroups>-->
                     <!--                    </configuration>-->
-                    <executions>
-                        <execution>
-                            <goals>
-                                <goal>integration-test</goal>
-                                <goal>verify</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 
             <!-- Need at least 2.22.0 to support JUnit 5 -->
 <!--            <plugin>-->
