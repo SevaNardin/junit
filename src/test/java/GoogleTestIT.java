@@ -19,6 +19,7 @@ public class GoogleTestIT {
     @Disabled
     @DisplayName( "Open google (UI Test)" )
     void openGoogle() {
+        // В CI проблема запуска Selenide надо копать
         // открытие страницы
         open("http:google.com");
         // ожидание
