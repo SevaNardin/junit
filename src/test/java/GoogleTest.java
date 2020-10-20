@@ -12,10 +12,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * UI тесты
  */
 
-public class GoogleTestIT {
+public class GoogleTest {
 
     @Test
-//    @Disabled("В CI проблема запуска Selenide надо копать")
     @DisplayName( "Open google (UI Test)" )
     void openGoogle() {
         // открытие страницы
