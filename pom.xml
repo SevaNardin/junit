@@ -17,6 +17,13 @@
     </properties>
 
     <dependencies>
+        <!-- JUnit4 -->
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <version>5.4.0</version>
+            <scope>test</scope>
+        </dependency>
         <!-- junit 5 -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -70,7 +77,7 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <includes>
-                        <include>Sample.java</include>
+                        <include>*Test.java</include>
                     </includes>
                     <excludes>
                         <exclude>**/TestCircle.java</exclude>
@@ -98,14 +105,6 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>7</source>
-                    <target>7</target>
-                </configuration>
             </plugin>
         </plugins>
     </build>
