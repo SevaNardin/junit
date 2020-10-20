@@ -1,3 +1,5 @@
+import com.codeborne.selenide.Configuration;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -13,6 +15,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 
 public class GoogleTest {
+
+    @BeforeEach
+    void init() {
+        Configuration.browserSize = "1920x1080";
+        Configuration.headless = true;              // Запуск браузера заблокирован, скрытый режим
+        Configuration.startMaximized = false;
+        Configuration.holdBrowserOpen = false;
+    }
 
     @Test
     @DisplayName( "Open google (UI Test)" )
