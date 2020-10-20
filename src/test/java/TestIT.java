@@ -2,7 +2,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-/** Класс для тестов */
+/** Класс для интеграционных тестов */
+
 public class TestIT {
 
     @Test
