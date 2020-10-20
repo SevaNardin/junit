@@ -16,10 +16,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class GoogleTestIT {
 
     @Test
-    @Disabled
+    @Disabled("В CI проблема запуска Selenide надо копать")
     @DisplayName( "Open google (UI Test)" )
     void openGoogle() {
-        // В CI проблема запуска Selenide надо копать
         // открытие страницы
         open("http:google.com");
         // ожидание
