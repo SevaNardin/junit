@@ -36,6 +36,13 @@
             <artifactId>maven-surefire-plugin</artifactId>
             <version>3.0.0-M5</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-failsafe-plugin</artifactId>
+            <version>3.0.0-M5</version>
+            <scope>test</scope>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/com.codeborne/selenide -->
         <dependency>
             <groupId>com.codeborne</groupId>
@@ -46,32 +53,42 @@
 
     <build>
         <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.0.0-M3</version>
+            <!-- Отвечает за выполнение модульных тестов - классов со словом Test-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                <configuration>
+                    <includes>
+                        <include>Sample.java</include>
+                    </includes>
+                    <excludes>
+                        <exclude>**/TestCircle.java</exclude>
+                        <exclude>**/TestSquare.java</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+            <!-- Отвечает за выполнение инетграционных тестов IT -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                    <!--                    <configuration>-->
+                    <!-- Фильтрование тестов по группам @Tag -->
+                    <!-- Включить тесты -->
+                    <!--                        <groups></groups>-->
+                    <!-- Исключить тесты -->
+                    <!--                        <excludedGroups></excludedGroups>-->
+                    <!--                    </configuration>-->
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>integration-test</goal>
+                                <goal>verify</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
-
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-failsafe-plugin</artifactId>
-                    <version>3.0.0-M5</version>
-                        <!--                    <configuration>-->
-                        <!-- Фильтрование тестов по группам @Tag -->
-                        <!-- Включить тесты -->
-                        <!--                        <groups></groups>-->
-                        <!-- Исключить тесты -->
-                        <!--                        <excludedGroups></excludedGroups>-->
-                        <!--                    </configuration>-->
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>integration-test</goal>
-                                    <goal>verify</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
 
             <!-- Need at least 2.22.0 to support JUnit 5 -->
 <!--            <plugin>-->
