@@ -35,7 +35,7 @@ public class GoogleTest {
         // получаем текущий URL
         String currentURL = url();
         // проверка страницы
-        Assertions.assertEquals("https://www.google.com/?gws_rd=ssl", currentURL, "Error: No correct URl!");
+        Assertions.assertEquals("https://www.google.com/?gws_rd=ssl1", currentURL, "Error: No correct URl!");
     }
 
 }
