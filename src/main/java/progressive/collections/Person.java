@@ -8,10 +8,22 @@ import java.util.Objects;
 public class Person {
     private int id;
     private String name;
-
+    // кнтрукторы класса
     public Person(int id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public Person(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 
     // если не переопределить эти методы то будут сравниваться ссылки на объекты
