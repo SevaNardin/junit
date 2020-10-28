@@ -12,8 +12,15 @@ public class Lesson3 {
     }
     // синхронизация потоков/ у всех объектов есть монитор, завладеть монитором может только один поток
     // всегда будет 20000 / поток2 ждет пока не отработает поток 1 и  так далее
-    public synchronized void increment() {
-        counter++;
+//    public synchronized void increment() {
+//        counter++;
+//    }
+    // тоже самое
+    public void increment() {
+        // синхронизированный блок
+        synchronized( this ) {
+            counter++;
+        }
     }
 
     public void doWork() throws InterruptedException {
