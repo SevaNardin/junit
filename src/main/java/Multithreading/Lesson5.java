@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class Lesson5 {
     public static void main(String[] args) throws InterruptedException {
-        // 2 потока внутри - пул потоков
+        // 2 потока внутри - пул потоков- одновременный запуск потоков
         ExecutorService executorService = Executors.newFixedThreadPool( 2 );
         // выполним 5 заданий - 2 потоками
         for( int i = 0; i < 5; i++ ) {
