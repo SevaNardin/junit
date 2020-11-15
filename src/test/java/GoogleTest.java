@@ -29,13 +29,13 @@ public class GoogleTest {
     @DisplayName( "Open google (UI Test)" )
     void openGoogle() throws InterruptedException {
         // открытие страницы
-        open("http:google.com");
+        Selenide.open("http:google.com");
         // ищем поле Поиск , пишем текст и нажимаем Enter
-        $( By.name("q")).setValue("test").pressEnter();
+        Selenide.$( By.name("q")).setValue("test").pressEnter();
         // ждем результата
         Thread.sleep(3000);
         // проверка тайтла страницы
-        Assertions.assertTrue(Selenide.title().contains("test - Поиск в Google") );
+        Assertions.assertTrue( Selenide.title().contains("test - Поиск в Google") );
     }
 
 }
