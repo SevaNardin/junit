@@ -1,12 +1,12 @@
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 
-import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.sleep;
-import static com.codeborne.selenide.WebDriverRunner.url;
+import static com.codeborne.selenide.Selenide.*;
 
 /**
  * @author Seva Nardin
@@ -27,15 +27,15 @@ public class GoogleTest {
 
     @Test
     @DisplayName( "Open google (UI Test)" )
-    void openGoogle() {
+    void openGoogle() throws InterruptedException {
         // открытие страницы
         open("http:google.com");
-        // ожидание
-        sleep(3000);
-        // получаем текущий URL
-        String currentURL = url();
-        // проверка страницы
-        Assertions.assertEquals("https://www.google.com/?gws_rd=ssl", currentURL, "Error: No correct URl!");
+        // ищем поле Поиск , пишем текст и нажимаем Enter
+        $( By.name("q")).setValue("test").pressEnter();
+        // ждем результата
+        Thread.sleep(3000);
+        // проверка тайтла страницы
+        Assertions.assertTrue(Selenide.title().contains("test - Поиск в Google") );
     }
 
 }
