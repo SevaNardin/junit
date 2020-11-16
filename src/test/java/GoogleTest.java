@@ -39,7 +39,4 @@ public class GoogleTest {
         Assertions.assertTrue( Selenide.title().contains("test - Яндекс") );
     }
 
-
-    // /html/body/table/tbody/tr[2]/td/form/div[1]/span/span
-
 }
