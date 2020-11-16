@@ -18,7 +18,7 @@ public class GoogleTest {
     void init() {
         // Конфигурация Selenide
         Configuration.browserSize = "1920x1080";
-        Configuration.headless = false;              // Запуск браузера заблокирована, скрытый режим
+        Configuration.headless = false;              // Запуск браузера заблокирован, скрытый режим
         Configuration.startMaximized = false;
         Configuration.holdBrowserOpen = false;
     }
@@ -36,7 +36,7 @@ public class GoogleTest {
         // ждем результата
         Thread.sleep(3000);
         // проверка тайтла страницы
-        Assertions.assertTrue( Selenide.title().contains("test - Яндекс") );
+        Assertions.assertTrue( Selenide.title().contains("Яндекс: нашлось") );
     }
 
 }
