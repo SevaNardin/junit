@@ -27,13 +27,19 @@ public class GoogleTest {
     @DisplayName( "Open google (UI Test)" )
     void openGoogle() throws InterruptedException {
         // открытие страницы
-        Selenide.open("http:google.com");
+        Selenide.open("https://yandex.ru/");
         // ищем поле Поиск , пишем текст и нажимаем Enter
-        Selenide.$( By.name("q")).setValue("test").pressEnter();
+        if( Selenide.$( By.xpath("//*[@id='text']")).isDisplayed()  ) {
+            System.out.println( "Элемент найден!" );
+            Selenide.$( By.xpath("//*[@id='text']")).setValue("test").pressEnter();
+        }
         // ждем результата
         Thread.sleep(3000);
         // проверка тайтла страницы
-        Assertions.assertTrue( Selenide.title().contains("test - Поиск в Google") );
+        Assertions.assertTrue( Selenide.title().contains("test - Яндекс") );
     }
+
+
+    // /html/body/table/tbody/tr[2]/td/form/div[1]/span/span
 
 }
