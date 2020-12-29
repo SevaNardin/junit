@@ -18,7 +18,7 @@ public class GoogleTest {
     void init() {
         // Конфигурация Selenide
         Configuration.browserSize = "1920x1080";
-        Configuration.headless = false;              // Запуск браузера заблокирован, скрытый режим
+        Configuration.headless = true;              // Запуск браузера заблокирован, скрытый режим
         Configuration.startMaximized = false;
         Configuration.holdBrowserOpen = false;
     }
