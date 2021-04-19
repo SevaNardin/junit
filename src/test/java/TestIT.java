@@ -40,13 +40,6 @@ public class TestIT {
         Assertions.assertEquals( 2, c , "Error: no correct value!");
     }
 
-
-
-
-
-
-
-
     @ParameterizedTest( name = "#{index} - Run test with args={0}" )
     @ValueSource( ints = { 1, 2, 3 } )
     void test01( int num ) {
