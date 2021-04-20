@@ -88,19 +88,12 @@
         </dependency>
 
         <!-- selenide -->
+        <!-- https://mvnrepository.com/artifact/com.codeborne/selenide -->
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>5.15.1</version>
+            <version>5.20.2</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>3.141.59</version>
-        </dependency>
-
 
     </dependencies>
 
@@ -175,6 +168,7 @@
                         <property>
                             <name>junit.jupiter.extensions.autodetection.enabled</name>
                             <value>true</value>
+                            <allure.results.directory>${project.build.directory}\allure-results</allure.results.directory>
                         </property>
                         <property>
                             <name>allure.results.directory</name>
