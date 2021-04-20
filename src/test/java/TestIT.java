@@ -41,7 +41,7 @@ public class TestIT {
     }
 
     @ParameterizedTest( name = "#{index} - Run test with args={0}" )
-    @ValueSource( ints = { 1, 2, 3 } )
+    @ValueSource( ints = { 4, 2, 3 } )
     void test01( int num ) {
         // передаваемое значение
         System.out.println("Значение: " + num );
