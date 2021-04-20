@@ -1,6 +1,5 @@
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
-import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -25,7 +24,6 @@ public class GoogleTest {
     }
 
     @Test
-    @Step
     @DisplayName( "Open google (UI Test)" )
     void openGoogle() throws InterruptedException {
         // открытие страницы
