@@ -67,9 +67,14 @@
         <!-- For Allure -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
-            <artifactId>allure2-model</artifactId>
-            <version>1.0-BETA3</version>
-            <type>pom</type>
+            <artifactId>allure-java-commons</artifactId>
+            <version>2.13.9</version>
+        </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit5</artifactId>
+            <version>2.13.9</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
