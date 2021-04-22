@@ -1,8 +1,7 @@
 package config;
 
 /**
- * @author Seva Nardin
- * Конфигурация для тестов Cucumber
+ * @author Seva Nardin * Конфигурация для тестов Cucumber
  */
 public class UserConfig {
 
