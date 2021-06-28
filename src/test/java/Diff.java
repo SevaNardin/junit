@@ -25,20 +25,20 @@ public class Diff {
     private Subject subject ;
     private Subject subjectJP ;
     private Long agentContractJPId ;
-    private static Operdoc operdoc ;
-    private static AgentCommission ac00 ;
+    private Operdoc operdoc ;
+    private AgentCommission ac00 ;
     private static JdbcFactory staff = TestBackEnd.getStaff() ;
     private static final String finCode = "YARSL";
     private static final Logger logger = LogManager.getLogger( ActIT.class ) ;
-    private static Instant contractDate;
-    private static Contract contract;
-    private static String docNum;
-    private static Subject signer ;
+    private Instant contractDate;
+    private Contract contract;
+    private String docNum;
+    private Subject signer ;
     private static final Long deptId = 3032L ;
     private final String intTest = MainContext.getParam( "integration.test" );    // вкл/выкл интеграционных тестов
     private String contractNumber ;
     private Long agentContractId ;
-    private static DiffAdd diffAdd;
+    private DiffAdd diffAdd;
 
     @BeforeEach
     void init() {
