@@ -21,7 +21,7 @@ import static org.junit.Assert.assertEquals;
  * Тесты на проверку функционала актов
  */
 
-public class Diff {
+public class DiffIT {
     private Subject subject ;
     private Subject subjectJP ;
     private Long agentContractJPId ;
