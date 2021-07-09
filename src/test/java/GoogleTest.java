@@ -6,6 +6,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
+import java.util.logging.Logger;
+
 /**
  * @author Seva Nardin
  *
@@ -13,6 +15,8 @@ import org.openqa.selenium.By;
  */
 
 public class GoogleTest {
+
+    private static Logger logger = Logger.getLogger( GoogleTest.class.getName() );
 
     @BeforeEach
     void init() {
@@ -28,6 +32,7 @@ public class GoogleTest {
     void openGoogle() throws InterruptedException {
         // открытие страницы
         Selenide.open("https://yandex.ru/");
+        logger.info( "page: " + "https://yandex.ru/" );
         // ищем поле Поиск , пишем текст и нажимаем Enter
         if( Selenide.$( By.xpath("//*[@id='text']")).isDisplayed()  ) {
             System.out.println( "Элемент найден!" );
