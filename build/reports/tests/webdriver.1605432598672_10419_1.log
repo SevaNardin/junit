@@ -1,0 +1,181 @@
+[1605432598,798][INFO]: Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 19194
+[1605432598,798][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1605432598,963][INFO]: [df42e6fbe2d59e4e57d24e5532a66709] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "/home/seva/IdeaProjects/junit/build/downloads/1605432598439_10419_1",
+               "plugins.always_open_pdf_externally": true
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "/home/seva/IdeaProjects/junit/build/downloads/1605432598439_10419_1",
+            "plugins.always_open_pdf_externally": true
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1605432598,963][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "/home/seva/IdeaProjects/junit/build/downloads/1605432598439_10419_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1605432598,963][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1605432598,963][INFO]: Launching chrome: /usr/bin/google-chrome --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/tmp/.com.google.Chrome.TacyRe data:,
+[1605432600,200][INFO]: resolved localhost to ["127.0.0.1"]
+[1605432600,203][INFO]: resolved localhost to ["127.0.0.1"]
+[1605432600,273][INFO]: [df42e6fbe2d59e4e57d24e5532a66709] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "86.0.4240.111",
+      "chrome": {
+         "chromedriverVersion": "86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378})",
+         "userDataDir": "/tmp/.com.google.Chrome.TacyRe"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:44683"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "linux",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "df42e6fbe2d59e4e57d24e5532a66709"
+}
+[1605432600,304][INFO]: [df42e6fbe2d59e4e57d24e5532a66709] COMMAND SetWindowRect {
+   "height": 1080,
+   "width": 1920
+}
+[1605432600,304][INFO]: Waiting for pending navigations...
+[1605432600,305][INFO]: Done waiting for pending navigations. Status: ok
+[1605432600,410][INFO]: Waiting for pending navigations...
+[1605432600,412][INFO]: Done waiting for pending navigations. Status: ok
+[1605432600,412][INFO]: [df42e6fbe2d59e4e57d24e5532a66709] RESPONSE SetWindowRect {
+   "height": 1079,
+   "width": 1919,
+   "x": 1,
+   "y": 0
+}
+[1605432600,422][INFO]: [df42e6fbe2d59e4e57d24e5532a66709] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1605432600,422][INFO]: [df42e6fbe2d59e4e57d24e5532a66709] RESPONSE SetTimeouts
+[1605432600,437][INFO]: [df42e6fbe2d59e4e57d24e5532a66709] COMMAND Navigate {
+   "url": "http:google.com"
+}
+[1605432600,437][INFO]: Waiting for pending navigations...
+[1605432600,438][INFO]: Done waiting for pending navigations. Status: ok
+[1605432601,515][INFO]: Waiting for pending navigations...
+[1605432602,029][INFO]: Done waiting for pending navigations. Status: ok
+[1605432602,029][INFO]: [df42e6fbe2d59e4e57d24e5532a66709] RESPONSE Navigate
+[1605432602,031][INFO]: [df42e6fbe2d59e4e57d24e5532a66709] COMMAND GetUrl {
+
+}
+[1605432602,031][INFO]: Waiting for pending navigations...
+[1605432602,032][INFO]: Done waiting for pending navigations. Status: ok
+[1605432602,035][INFO]: Waiting for pending navigations...
+[1605432602,035][INFO]: Done waiting for pending navigations. Status: ok
+[1605432602,035][INFO]: [df42e6fbe2d59e4e57d24e5532a66709] RESPONSE GetUrl "https://www.google.com/?gws_rd=ssl"
+[1605432605,055][INFO]: [df42e6fbe2d59e4e57d24e5532a66709] COMMAND Quit {
+
+}
+[1605432605,105][INFO]: [df42e6fbe2d59e4e57d24e5532a66709] RESPONSE Quit
