@@ -68,7 +68,7 @@ public class TestIT {
     }
 
     @Test
-    @DisplayName( "API testing")
+    @DisplayName( "GET")
     public void postmanFirstGetTest(){
         RestAssured.
                 when().get("https://postman-echo.com/get?foo1=bar1&foo2=bar2").
@@ -77,6 +77,7 @@ public class TestIT {
     }
 
     @Test
+    @DisplayName( "POST")
     public void postRequestExampleTest() {
         String someRandomString = String.format("%1$TH%1$TM%1$TS", new Date());
         JSONObject requestBody = new JSONObject();
